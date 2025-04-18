@@ -1443,7 +1443,7 @@ def core_build(cmake_script, repo_dir, cmake_dir, build_dir, install_dir,
                         os.path.join(install_dir, 'bin'))
         cmake_script.mkdir(os.path.join(install_dir, 'lib'))
         cmake_script.cp(
-            os.path.join(repo_install_dir, 'lib', 'libtritonserver.so'),
+            os.path.join(repo_install_dir, 'lib64', 'libtritonserver.so'),
             os.path.join(install_dir, 'lib'))
 
     cmake_script.mkdir(os.path.join(install_dir, 'include', 'triton'))
